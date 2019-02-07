@@ -1,0 +1,44 @@
+.can-you {
+  width: 50%;
+
+  &__list {
+    font-family: "Acrom-Regular", serif;
+    font-size: 16.67px;
+    color: $primary-color;
+    line-height: 1.4;
+    list-style: none;
+    width: 82%;
+    padding: 0 0 0 72px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  &__item {
+    margin-bottom: 14px;
+    position: relative;
+
+    &--last {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: $secondary-color;
+      position: absolute;
+      top: 8px;
+      left: -22px;
+    }
+  }
+}
+
+.can-you--flex {
+  display: flex;
+  align-items: flex-end;
+
+  img {
+    transform: translateX(-26px);
+  }
+}

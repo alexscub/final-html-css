@@ -2,4 +2,27 @@
     width: 860px;
     padding: 0 6px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+section {
+  padding-top: 80px;
+}
+
+.negative {
+  background-color: $primary-color;
+  color: $title-color;
+}
+
+h3 {
+  font-family: "Acrom-ExtraBold", serif;
+  font-size: 36.67px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

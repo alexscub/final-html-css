@@ -1,0 +1,25 @@
+ .stages-list {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     min-height: 374px;
+     box-sizing: border-box;
+     margin-bottom: 60px;
+    &__item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    width: 216px;
+    box-sizing: border-box;
+    min-height: 80px;
+    border-left: $secondary-color 4px solid;
+    box-shadow: -16px 16px 49px 0px rgba(63,65,68,0.2);
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    }
+ }
