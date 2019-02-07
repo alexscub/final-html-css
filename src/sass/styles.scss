@@ -10,4 +10,11 @@
 @import './nav';
 @import './logo';
 @import './footer';
-@import './section3';
+
+// here will be last-section parts of css
+
+@import './last-section/title';
+@import './last-section/stages-list';
+@import './last-section/arrow';
+@import './last-section/total';
+@import './last-section/button';
