@@ -1,0 +1,14 @@
+button {
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: $secondary-color;
+    border: none;
+    cursor: pointer;
+    font-family: "Acrom-ExtraBold", sans-serif;
+    font-size: 14px;
+    width: 334px;
+    min-height: 46px;
+    box-shadow: 0px 14px 43px -1px rgba(239,115,48,0.37);
+}
