@@ -6,7 +6,10 @@
 @import './variables';
 @import './mixins';
 @import './common';
-@import './header';
-@import './nav';
-@import './logo';
-@import './footer';
+@import './header/header.scss';
+@import './header/logo.scss';
+@import './header/contact.scss';
+@import './main-hedline.scss';
+@import './section1/first.scss';
+@import './section1/from-scratch.scss';
+@import './section1/can-you.scss';

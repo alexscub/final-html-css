@@ -1,0 +1,24 @@
+.first {
+  font-family: "Acrom-Bold", serif;
+  font-size: 20.83px;
+  width: 38.56%;
+  padding-left: 100px;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 8px;
+    background: $primary-color;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+
+  &--last {
+    margin-bottom: 58px;
+  }
+}
