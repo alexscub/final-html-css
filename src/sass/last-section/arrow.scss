@@ -1,0 +1,53 @@
+.arrow {
+    width: 80px;
+    height: 2px;
+    background-color: $secondary-color;
+    position: absolute;
+    left: 220px;
+    top: 50%;
+    transform: translateY(-50%) ;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 40px solid transparent;
+        border-left-color: $secondary-color;
+        border-width: 4px 0 4px 12px;
+        left: 90%;
+        top: 50%;
+        transform: translateY(-50%) ;
+    }
+    &-down {
+        width: 20px;
+        top: 94px;
+       left: 90px;
+       transform: translateX(-50%);
+       transform: rotate(90deg);
+    }
+}
+.reverse {
+    transform: rotate(180deg) ;
+}
+.stages-list__item--last {
+    margin: 0 auto;
+    .arrow{
+        left: -212px;
+        width: 188px;
+    }
+    .arrow::before {
+        left:100%;
+    }
+    .arrow::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 74px;
+        left: 0;
+        background-color: $secondary-color;
+        bottom: 0;
+    }
+
+}
+

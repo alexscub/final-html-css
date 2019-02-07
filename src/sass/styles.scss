@@ -6,8 +6,18 @@
 @import './variables';
 @import './mixins';
 @import './common';
-@import './header';
-@import './nav';
-@import './logo';
-@import './footer';
-@import './section3';
+
+// here will be last-section parts of css
+
+@import './last-section/title';
+@import './last-section/stages-list';
+@import './last-section/arrow';
+@import './last-section/total';
+@import './last-section/button';
+@import './header/header.scss';
+@import './header/logo.scss';
+@import './header/contact.scss';
+@import './main-hedline.scss';
+@import './section1/first.scss';
+@import './section1/from-scratch.scss';
+@import './section1/can-you.scss';
