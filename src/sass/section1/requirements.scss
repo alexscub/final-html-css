@@ -2,11 +2,6 @@
   width: 100%;
 }
 
-.requirements__title {
-  width: 55.18%;
-  margin-bottom: 40px;
-}
-
 .requirements--flex {
   display: flex;
   justify-content: space-between;
@@ -31,7 +26,6 @@
     content: "";
     display: block;
     width: 50px;
-    height: 16px;
     background-color: $secondary-color;
     position: absolute;
     left: -8px;
@@ -39,8 +33,10 @@
     transform: rotate(-90deg);
     font-family: "Acrom-Bold", serif;
     color: #ffffff;
-    font-size: 13.33px;
+    font-size: 14px;
     text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.01rem;
   }
 }
 
@@ -54,13 +50,13 @@
 }
 
 .requirements-list__item--1::before {
-  content: "[001]";
+  content: "[ 001 ]";
 }
 
 .requirements-list__item--2::before {
-  content: "[002]";
+  content: "[ 002 ]";
 }
 
 .requirements-list__item--3::before {
-  content: "[003]";
+  content: "[ 003 ]";
 }
