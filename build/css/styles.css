@@ -406,6 +406,7 @@ template {
 
 section {
   padding-top: 80px;
+  margin-bottom: 50px;
 }
 
 .negative {
@@ -640,7 +641,7 @@ button {
 }
 
 .second-items-list__item::before {
-  content: '■';
+  content: "■";
   color: #f1682a;
   position: absolute;
   top: 48px;
@@ -652,7 +653,7 @@ button {
   width: 200px;
   padding-left: 78px;
   margin-right: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 34px;
 }
 
 .item__count {
@@ -663,6 +664,7 @@ button {
   color: #ffffff;
   background: #000;
   margin-bottom: 8px;
+  margin-top: 0;
 }
 
 .item__title {
@@ -676,11 +678,12 @@ button {
   font-size: 10px;
   font-family: Acrom-Regular;
   line-height: 14px;
+  margin: 0;
 }
 
 .item__number {
   position: absolute;
-  top: 8px;
+  top: -8px;
   left: 4px;
   font-family: Acrom-ExtraBold;
   font-size: 37px;
@@ -719,6 +722,10 @@ button {
 
 .second-items-list__item:nth-child(8) .item__number {
   width: 48px;
+}
+
+.second-items-list__item--mrn {
+  margin-bottom: 0;
 }
 
 .header {
@@ -795,7 +802,8 @@ main {
   font-family: "Acrom-ExtraBold", serif;
   font-size: 57.5px;
   color: #000000;
-  margin: 0 0 60px;
+  margin: 0 0 54px;
+  line-height: 1.2;
 }
 
 .first {
@@ -896,9 +904,78 @@ main {
 .can-you--flex {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 70px;
 }
 
 .can-you--flex img {
   -webkit-transform: translateX(-26px);
   transform: translateX(-26px);
+}
+
+.requirements {
+  width: 100%;
+}
+
+.requirements__title {
+  width: 55.18%;
+  margin-bottom: 40px;
+}
+
+.requirements--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.requirements-list {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.requirements-list__item {
+  padding-left: 34px;
+  box-sizing: border-box;
+  font-family: "Acrom-Regular", serif;
+  font-size: 16.67px;
+  line-height: 1.8;
+  color: #3f4144;
+  position: relative;
+}
+
+.requirements-list__item::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 16px;
+  background-color: #ef7330;
+  position: absolute;
+  left: -8px;
+  top: 20px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-family: "Acrom-Bold", serif;
+  color: #ffffff;
+  font-size: 13.33px;
+  text-align: center;
+}
+
+.requirements-list__item--1,
+.requirements-list__item--3 {
+  width: 58.82%;
+}
+
+.requirements-list__item--2 {
+  width: 41%;
+}
+
+.requirements-list__item--1::before {
+  content: "[001]";
+}
+
+.requirements-list__item--2::before {
+  content: "[002]";
+}
+
+.requirements-list__item--3::before {
+  content: "[003]";
 }
