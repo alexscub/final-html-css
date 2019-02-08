@@ -1,0 +1,66 @@
+.requirements {
+  width: 100%;
+}
+
+.requirements__title {
+  width: 55.18%;
+  margin-bottom: 40px;
+}
+
+.requirements--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.requirements-list {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.requirements-list__item {
+  padding-left: 34px;
+  box-sizing: border-box;
+  font-family: "Acrom-Regular", serif;
+  font-size: 16.67px;
+  line-height: 1.8;
+  color: $text-color;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 16px;
+    background-color: $secondary-color;
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    transform: rotate(-90deg);
+    font-family: "Acrom-Bold", serif;
+    color: #ffffff;
+    font-size: 13.33px;
+    text-align: center;
+  }
+}
+
+.requirements-list__item--1,
+.requirements-list__item--3 {
+  width: 58.82%;
+}
+
+.requirements-list__item--2 {
+  width: 41%;
+}
+
+.requirements-list__item--1::before {
+  content: "[001]";
+}
+
+.requirements-list__item--2::before {
+  content: "[002]";
+}
+
+.requirements-list__item--3::before {
+  content: "[003]";
+}
