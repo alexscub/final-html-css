@@ -3,11 +3,10 @@
   padding: 0 6px;
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-section {
-  padding-top: 80px;
-  margin-bottom: 50px;
+  @media (max-width: 859px) 
+  {
+    width: 100%;
+  }
 }
 
 .negative {

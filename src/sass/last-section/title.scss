@@ -6,4 +6,8 @@
     margin-bottom: 40px;
     margin-top: 0px;
     line-height: 1.4;
+    @media (max-width: 859px) 
+    {
+      width: 100%;
+    }
  }

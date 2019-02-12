@@ -404,11 +404,6 @@ template {
   box-sizing: border-box;
 }
 
-section {
-  padding-top: 80px;
-  margin-bottom: 50px;
-}
-
 .negative {
   background-color: #000000;
   color: #ffffff;
@@ -448,6 +443,7 @@ img {
 }
 
 .stages-list__item {
+  background: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -731,6 +727,7 @@ button {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 30px;
 }
 
@@ -743,26 +740,15 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 230px;
-  font-size: 10.42px;
+  width: 250px;
+  font-size: 11px;
+  line-height: 2;
   font-family: "Acrom-Medium", serif;
 }
 
 .contacts__mail {
-  padding: 5px 0 5px 20px;
+  padding: 5px 0 5px 0;
   position: relative;
-}
-
-.contacts__mail::before {
-  width: 16px;
-  height: 12px;
-  content: "";
-  display: block;
-  background-image: url(../images/icons/mail.svg);
-  background-position: center;
-  position: absolute;
-  top: 5px;
-  left: 0;
 }
 
 .contacts__mail a,
@@ -776,27 +762,27 @@ button {
   padding: 0;
 }
 
-.contacts li::before {
-  width: 16px;
-  height: 12px;
-  content: "";
-  display: block;
-  background-image: url(../images/icons/phone.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-}
-
 .contacts li {
   list-style: none;
-  position: relative;
-  padding: 2px 0 2px 20px;
+  padding: 0 2px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  padding-right: 4px;
+}
+
+.link_with_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
   background-image: url(../images/background.png);
   padding-bottom: 86px;
+  padding-top: 70px;
 }
 
 .main-headline {
@@ -826,10 +812,6 @@ main {
   position: absolute;
   left: 0;
   top: 5px;
-}
-
-.first--last {
-  margin-bottom: 58px;
 }
 
 .from-scratch {
@@ -970,4 +952,14 @@ main {
 
 .requirements-list__item--3::before {
   content: "[ 003 ]";
+}
+
+@media (max-width: 859px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+  }
 }
