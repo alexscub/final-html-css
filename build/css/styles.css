@@ -397,7 +397,7 @@ template {
   src: url(../fonts/Acrom-Medium.woff);
 }
 
-.container {
+.wrapper {
   width: 860px;
   padding: 0 6px;
   margin: 0 auto;
@@ -422,11 +422,18 @@ img {
   height: auto;
 }
 
+section {
+  margin-bottom: 60px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
 .title {
   font-family: "Acrom-ExtraBold", sans-serif;
   font-size: 36px;
   color: #000000;
-  width: 500px;
   margin-bottom: 40px;
   margin-top: 0px;
   line-height: 1.4;
@@ -625,7 +632,7 @@ button {
   color: #ffffff;
   width: 574px;
   font-family: Acrom-ExtraBold;
-  margin: 0px 0px 44px;
+  margin: 0px 0px 64px;
 }
 
 .second-items-list {
@@ -649,7 +656,7 @@ button {
   width: 200px;
   padding-left: 78px;
   margin-right: 4px;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 }
 
 .item__count {
@@ -729,6 +736,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .logo {
@@ -740,15 +748,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 230px;
   font-size: 11px;
-  line-height: 2;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
   font-family: "Acrom-Medium", serif;
-}
-
-.contacts__mail {
-  padding: 5px 0 5px 0;
-  position: relative;
 }
 
 .contacts__mail a,
@@ -768,9 +772,14 @@ button {
 }
 
 .icon {
+  width: 19px;
+  height: 15px;
+  padding-right: 3px;
+}
+
+.icon--tell {
   width: 14px;
   height: 14px;
-  padding-right: 4px;
 }
 
 .link_with_icon {
@@ -814,14 +823,20 @@ main {
   top: 5px;
 }
 
+.first--last {
+  margin: 0;
+}
+
 .from-scratch {
   display: flex;
   position: relative;
   margin-bottom: 100px;
+  justify-content: space-between;
 }
 
 .from-scratch--right {
-  padding: 30px 0 0 16px;
+  width: 48.7%;
+  padding: 30px 0 0 0;
   margin: 0;
 }
 
@@ -882,7 +897,6 @@ main {
 .can-you--flex {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 70px;
 }
 
 .can-you--flex img {
@@ -892,6 +906,7 @@ main {
 
 .requirements {
   width: 100%;
+  margin-bottom: 140px;
 }
 
 .requirements--flex {
@@ -906,11 +921,11 @@ main {
 }
 
 .requirements-list__item {
-  padding-left: 34px;
+  padding-left: 40px;
   box-sizing: border-box;
   font-family: "Acrom-Regular", serif;
   font-size: 16.67px;
-  line-height: 1.8;
+  line-height: 1.6;
   color: #3f4144;
   position: relative;
 }
@@ -922,7 +937,7 @@ main {
   background-color: #ef7330;
   position: absolute;
   left: -8px;
-  top: 20px;
+  top: 24px;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-family: "Acrom-Bold", serif;
@@ -955,7 +970,7 @@ main {
 }
 
 @media (max-width: 859px) {
-  .container {
+  .wrapper {
     width: 100%;
   }
 

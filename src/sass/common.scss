@@ -1,4 +1,4 @@
-.container {
+.wrapper {
   width: 860px;
   padding: 0 6px;
   margin: 0 auto;
@@ -25,4 +25,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+section {
+  margin-bottom: 60px;
+  
+  &:last-child{
+    margin-bottom: 0;
+  }
 }

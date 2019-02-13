@@ -1,5 +1,6 @@
 .requirements {
   width: 100%;
+  margin-bottom: 140px;
 }
 
 .requirements--flex {
@@ -14,11 +15,11 @@
 }
 
 .requirements-list__item {
-  padding-left: 34px;
+  padding-left: 40px;
   box-sizing: border-box;
   font-family: "Acrom-Regular", serif;
   font-size: 16.67px;
-  line-height: 1.8;
+  line-height: 1.6;
   color: $text-color;
   position: relative;
 
@@ -29,7 +30,7 @@
     background-color: $secondary-color;
     position: absolute;
     left: -8px;
-    top: 20px;
+    top: 24px;
     transform: rotate(-90deg);
     font-family: "Acrom-Bold", serif;
     color: #ffffff;
